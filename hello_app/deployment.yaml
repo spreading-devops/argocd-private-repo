@@ -20,7 +20,7 @@ spec:
         - name: regcred
       containers:
       - name: hello-deployment
-        image: matheuscarino/argocd-private-repo:latest
+        image: matheuscarino/argocd-private-repo:v2
         resources:
           limits:
             memory: "128Mi"
