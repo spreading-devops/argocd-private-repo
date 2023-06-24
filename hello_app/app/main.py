@@ -2,6 +2,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
+@app.route("/argocd")
+def argocd_msg():
+    return "Isn't ArgoCD pretty amazing?"
+
 @app.route("/")
 def home():
     return "Hello World! Deployed using Argo CD!"
